@@ -13,7 +13,8 @@ function onClick(event) {
   const bodyEl = document.querySelector("body");
   bodyEl.style.backgroundColor = getRandomHexColor();
   const spanText = document.querySelector(".color");
-  spanText.textContent = bodyEl.style.backgroundColor;
+  const colorText = bodyEl.style.backgroundColor;
+  spanText.textContent = colorText;
 }
 
 btnChangeColor.addEventListener("click", onClick);

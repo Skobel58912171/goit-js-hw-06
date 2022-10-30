@@ -9,7 +9,7 @@
 const inputText = document.querySelector("#validation-input");
 // console.log(inputText);
 inputText.addEventListener("blur", (event) => {
-  if (inputText.value.length == Number(inputText.dataset.length)) {
+  if (inputText.value.length === Number(inputText.dataset.length)) {
     inputText.classList.remove("invalid");
     inputText.classList.add("valid");
   } else {
